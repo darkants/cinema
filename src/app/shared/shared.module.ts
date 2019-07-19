@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import {BrowserModule} from '@angular/platform-browser';
 import { HeaderComponent } from './core/header/header.component';
 import { FooterComponent } from './core/footer/footer.component';
+import {MaterialModule} from './libs/material.module';
 
 
 @NgModule({
@@ -12,11 +13,13 @@ import { FooterComponent } from './core/footer/footer.component';
   ],
   imports: [
     CommonModule,
-    BrowserModule
+    BrowserModule,
+    MaterialModule
   ],
   exports: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    MaterialModule
   ]
 })
 export class SharedModule { }
