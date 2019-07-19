@@ -13,7 +13,7 @@ import {PagesModule} from './pages/pages.module';
 /**
  * services
  */
-import {MainPageService} from './services/main-page.service';
+
 /**
  * components
  */
@@ -32,7 +32,7 @@ import { AppComponent } from './app.component';
     PagesModule,
   ],
   providers: [
-    MainPageService
+
   ],
   bootstrap: [AppComponent]
 })
