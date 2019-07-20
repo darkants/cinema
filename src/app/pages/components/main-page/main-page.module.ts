@@ -14,6 +14,7 @@ import {MainPageComponent} from './main-page.component';
 import {MaterialModule} from '../../../../../libs/modules/material.module';
 
 
+
 @NgModule({
   declarations: [
     MainPageComponent
