@@ -1,9 +1,16 @@
+/**
+ * native elements
+ */
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {MainPageComponent} from './pages/components/main-page/main-page.component';
 
+
+/**
+ * main routes
+ */
 const routes: Routes = [
-  {path: 'landing', component: MainPageComponent}
+  {path: 'landing',
+    loadChildren: () => import('./pages/components/main-page/main-page.module').then(mod => mod.MainPageModule)}
 ];
 
 @NgModule({
