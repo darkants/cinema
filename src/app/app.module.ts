@@ -8,7 +8,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
  * app modules
  */
 import { AppRoutingModule } from './app-routing.module';
-import {SharedModule} from './shared/shared.module';
+import {LibsModule} from '../../libs/libs.module';
+import {CoreModule} from './core/core.module';
 /**
  * services
  */
@@ -17,6 +18,8 @@ import {SharedModule} from './shared/shared.module';
  * components
  */
 import { AppComponent } from './app.component';
+import {LocalStorageService} from './services/local-storage.service';
+
 
 
 @NgModule({
@@ -24,13 +27,14 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
     AppRoutingModule,
-    SharedModule,
+    BrowserAnimationsModule,
+    BrowserModule,
+    LibsModule,
+    CoreModule
   ],
   providers: [
-
+    LocalStorageService
   ],
   bootstrap: [AppComponent]
 })

@@ -11,6 +11,8 @@ import { MainPageRoutingModule } from './main-page-routing.module';
  * components
  */
 import {MainPageComponent} from './main-page.component';
+import {MaterialModule} from '../../../../../libs/modules/material.module';
+
 
 
 @NgModule({
@@ -19,7 +21,8 @@ import {MainPageComponent} from './main-page.component';
   ],
   imports: [
     CommonModule,
-    MainPageRoutingModule
+    MainPageRoutingModule,
+    MaterialModule
   ]
 })
 export class MainPageModule { }
