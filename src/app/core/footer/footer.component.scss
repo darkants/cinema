@@ -1,0 +1,38 @@
+.section {
+  background-color: black;
+  color: #f6f7ff;
+}
+.company li{
+  display: block;
+  padding-bottom: .5rem!important;
+  padding-top: .5rem!important;
+}
+.link, p, li {
+  color: #f6f7ff;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #483e72;
+  text-decoration: none;
+  transition: .3s ease;
+}
+
+.title-list {
+  font-size: 18px;
+  font-weight: bold;
+  color: burlywood;
+}
+.logo-wrap{
+  margin-top: -15px;
+}
+.email-ico {
+  width: 45px;
+  margin-right: .3rem;
+  padding-top: .3rem;
+}
+@media screen and (min-width: 360px) and (max-width: 575px) {
+  .logo-contact{
+    padding-left: 15%!important;
+  }
+}

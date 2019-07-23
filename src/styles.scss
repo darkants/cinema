@@ -1,1 +1,9 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "/~bootstrap-4-grid/scss/grid.scss";
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Noto Serif', serif;
+}
